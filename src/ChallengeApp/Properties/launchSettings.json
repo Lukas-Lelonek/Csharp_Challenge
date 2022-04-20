@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ChallengeApp": {
+      "commandName": "Project",
+      "commandLineArgs": "Fucking Run!"
+    }
+  }
+}
