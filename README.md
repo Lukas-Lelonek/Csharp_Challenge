@@ -1,6 +1,6 @@
 C# Challenge from GoToIT
 
-This tool simulates Grading Employees with the feature of creating them and displaying their statistics.
+This tool simulates Grading Employees (as Console Application) with the feature of creating them and displaying their statistics.
 Employees and statistics are saved to txt files.
 
 Code takes all the lessons from the 21 Days Course such as:
