@@ -10,9 +10,8 @@ namespace ChallengeApp
     public class InMemoryEmp  : EmployeeSystemID
 
     {
-        public delegate void SackWarningDelegate(InMemoryEmp emp, double grade);
+        public delegate void SackWarningDelegate(InMemoryEmp employee, double grade);
         public event SackWarningDelegate LowGrade;
-
         private readonly int myId;
 
         public InMemoryEmp(string name)
@@ -28,7 +27,7 @@ namespace ChallengeApp
             Console.WriteLine($"My name is {this.Name}.\nMy id is {this.myId}.");
         }
 
-        public static void ChangeName(ref InMemoryEmp emp, string name)
+        public static void ChangeName(ref InMemoryEmp employee, string name)
         {
             bool nameIsValid = true;
             foreach (char chr in name)
@@ -40,7 +39,7 @@ namespace ChallengeApp
                 }
             }
             if (nameIsValid)
-            { emp.Name = name; }
+            { employee.Name = name; }
         }
 
         public override void AddGrade(string grade)
@@ -68,9 +67,9 @@ namespace ChallengeApp
             return null;
         }
 
-        public static void WarnSack(InMemoryEmp emp, double grade)
+        public static void WarnSack(InMemoryEmp employee, double grade)
         {
-            Console.WriteLine($"{emp.Name} has only {grade}! He should be fired!");
+            Console.WriteLine($"{employee.Name} has only {grade}! He should be fired!");
         }
 
     }

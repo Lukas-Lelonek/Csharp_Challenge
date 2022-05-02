@@ -8,7 +8,6 @@ namespace ChallengeApp
     {
         void IntroduceYourself();
         void AddGrade(string grade);
-        //void WarnSack();
-        //object GetEmployee(string input, List<this> employees);
+
     }
 }

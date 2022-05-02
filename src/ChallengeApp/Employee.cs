@@ -9,9 +9,8 @@ namespace ChallengeApp
     {
         const string FILENAME = "Report_name.txt";
 
-        public delegate void SackWarningDelegate(Employee emp, double grade);
+        public delegate void SackWarningDelegate(Employee employee, double grade);
         public event SackWarningDelegate LowGrade;
-        
         private readonly int myId;
 
         public Employee(string name)
@@ -47,7 +46,7 @@ namespace ChallengeApp
             Console.WriteLine($"My name is {this.Name}.\nMy id is {this.myId}.");
         }
 
-        public static void ChangeName(ref Employee emp, string name)
+        public static void ChangeName(ref Employee employee, string name)
         {
             bool nameIsValid = true;
             foreach(char chr in name)
@@ -59,13 +58,11 @@ namespace ChallengeApp
                 }
             }
             if (nameIsValid)
-            { emp.Name = name; }
+            { employee.Name = name; }
         }
 
         public override void AddGrade(string grade)
         {
-            
-
             if (double.TryParse(grade, out double result) && (result >= 0 && result <= 100))
             {
                 
@@ -91,9 +88,9 @@ namespace ChallengeApp
             return null;
         }
 
-        public static void WarnSack(Employee emp, double grade)
+        public static void WarnSack(Employee employee, double grade)
         {
-            Console.WriteLine($"{emp.Name} has only {grade}! He should be fired!");
+            Console.WriteLine($"{employee.Name} has only {grade}! He should be fired!");
         }
         private void PrepareReport()
         {

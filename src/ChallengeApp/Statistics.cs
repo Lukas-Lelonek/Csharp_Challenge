@@ -9,7 +9,6 @@ namespace ChallengeApp
         public static class Statistics 
         { 
         public static Dictionary<string,double> ShowStatistics(Employee employee)
-
         {
             try
             {

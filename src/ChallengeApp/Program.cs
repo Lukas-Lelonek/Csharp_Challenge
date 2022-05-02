@@ -10,6 +10,7 @@ namespace ChallengeApp
         {
             var employees = new List<Employee>();
             string response;
+
             EmployeesFiles.GetEmployeesFromFiles(ref employees);
 
             do
@@ -17,8 +18,7 @@ namespace ChallengeApp
                 Console.WriteLine("Welcome To Staff Grader 1987\n\nPress for following actions:");
                 Console.WriteLine("1 - Add New Employee\n2 - Select Employee\n3 - Show Statistics\nexit");
                 response = Console.ReadLine();
-
-                switch(response)
+                switch (response)
                 {
                     case "1":
                         Console.WriteLine("Provide Employee Name:");

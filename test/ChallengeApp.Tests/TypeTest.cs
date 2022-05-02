@@ -26,22 +26,22 @@ namespace ChallengeApp.Tests
 
         public string GetEmployeeID(string name)
         {
-            var emp = new Employee(name);
-            return emp.Name;
+            var employee = new Employee(name);
+            return employee.Name;
         }
 
         [Fact]
         public void GetEmployeeReturnsDifferentRefs()
         {
             //arrange
-            var emp1 = GetEmployee("Adam");
-            var emp2 = GetEmployee("Lolen");
+            var employee1 = GetEmployee("Adam");
+            var employee2 = GetEmployee("Lolen");
             //act
 
             //assert
-            Assert.Equal("Adam", emp1.Name);
-            Assert.Equal("Lolen", emp2.Name);
-            Assert.NotSame(emp1, emp2);
+            Assert.Equal("Adam", employee1.Name);
+            Assert.Equal("Lolen", employee2.Name);
+            Assert.NotSame(employee1, employee2);
 
         }
 

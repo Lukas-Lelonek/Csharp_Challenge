@@ -8,16 +8,16 @@ namespace ChallengeApp.Tests
     public class EmployeeTest
     {
         [Fact]
-        public void Test1()
+        public void EmployeeStatisticsTest()
         {
             //arrange
-            var emp = new Employee("Lolen");
-            emp.AddGrade("10");
-            emp.AddGrade("20");
-            emp.AddGrade("30");
+            var employee = new Employee("Lolen");
+            employee.AddGrade("10");
+            employee.AddGrade("20");
+            employee.AddGrade("30");
 
             //Act
-            Dictionary<string, double> Data = Statistics.ShowStatistics(emp);
+            Dictionary<string, double> Data = Statistics.ShowStatistics(employee);
             double expectedMax = 30;
             double expectedMin = 10;
             double expectedAvg = 20;

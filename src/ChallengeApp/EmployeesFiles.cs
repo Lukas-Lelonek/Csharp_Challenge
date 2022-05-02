@@ -9,7 +9,7 @@ namespace ChallengeApp
 {
     public static class EmployeesFiles
     {
-        public static void GetEmployeesFromFiles(ref List<Employee> emps)
+        public static void GetEmployeesFromFiles(ref List<Employee> employees)
         {
             
             string[] Files = Directory.GetFiles(Directory.GetCurrentDirectory());
@@ -20,7 +20,7 @@ namespace ChallengeApp
                     var fileName = Path.GetFileNameWithoutExtension(file);
                     string name = fileName.Replace("Report_", "");
                     var employee = new Employee(name);
-                    emps.Add(employee);
+                    employees.Add(employee);
                 }
             }
         }
