@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace ChallengeApp
 {
     public abstract class EmployeeSystemID : IEmployeeProfile
     {
-
         public string Name
         {
             get; set;
@@ -18,12 +18,12 @@ namespace ChallengeApp
 
         public virtual void AddGrade(string grade)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Grade added: {grade}");
         }
 
         public virtual void IntroduceYourself()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("This is abstract class");
         }
     }
 }

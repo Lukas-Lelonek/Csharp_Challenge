@@ -8,7 +8,6 @@ namespace ChallengeApp
     public class Employee : EmployeeSystemID
     {
         const string FILENAME = "Report_name.txt";
-
         public delegate void SackWarningDelegate(Employee employee, double grade);
         public event SackWarningDelegate LowGrade;
         private readonly int myId;

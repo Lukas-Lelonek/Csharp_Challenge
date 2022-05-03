@@ -71,7 +71,6 @@ namespace ChallengeApp
         {
             Console.WriteLine($"{employee.Name} has only {grade}! He should be fired!");
         }
-
     }
 }
 

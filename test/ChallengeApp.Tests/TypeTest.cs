@@ -9,7 +9,6 @@ namespace ChallengeApp.Tests
 {   
     public class TypeTest
     {
-
         public delegate string DelReadEmployeeID(string name);
 
         [Fact]

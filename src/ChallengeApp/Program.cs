@@ -55,7 +55,6 @@ namespace ChallengeApp
                     default:
                         response = "exit";
                         break;
-
                 }
             }
 
@@ -63,6 +62,4 @@ namespace ChallengeApp
 
         }
     }
-    
-
 }

@@ -4,11 +4,9 @@ using System.Collections.Generic;
 
 namespace ChallengeApp
 {
-    
-    
-        public static class Statistics 
-        { 
-        public static Dictionary<string,double> ShowStatistics(Employee employee)
+    public static class Statistics
+    {
+        public static Dictionary<string, double> ShowStatistics(Employee employee)
         {
             try
             {
@@ -30,7 +28,5 @@ namespace ChallengeApp
                 return null;
             }
         }
-        }
-            
-
+    }
 }
