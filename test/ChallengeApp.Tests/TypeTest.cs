@@ -16,9 +16,7 @@ namespace ChallengeApp.Tests
         {
             DelReadEmployeeID del;
             del = GetEmployeeID;
-
             var result = del("Jonasz");
-
             Assert.Equal("Jonasz", result);
 
         }
