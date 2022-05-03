@@ -10,7 +10,7 @@ Code takes all the lessons from the 21 Days Course such as:
 - Basic elements of C# such as loops, access modifiers etc.
 - Unit tests
 
-Liczę na doby feedback ;)
+Liczę na dobry feedback ;)
 
 Pozdrawiam,
 Łukasz
